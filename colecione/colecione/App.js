@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Drawer, Container, Header, View, Icon, Item, Input, Content } from 'native-base';
 import FooterExample from './sidebar';
-import Profile from './src/Profile';
+import Navigation from './navigation';
 export default class DrawerExample extends Component {
     closeDrawer = () => {
         this.drawer._root.close()
@@ -27,7 +27,7 @@ export default class DrawerExample extends Component {
                         </Item>
                     </Header>
                     <View style={{flex: 1}}>
-                        <Profile />
+                        <Navigation />
                     </View>
                 </Container>
             </Drawer>
