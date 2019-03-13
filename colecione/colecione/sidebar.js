@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, View, Content, ListItem, Text, Icon, Left, Body, Title, Thumbnail } from 'native-base';
+import Navigation from './navigation';
 export default class ListIconExample extends Component {
   render() {
     return (
@@ -9,7 +10,7 @@ export default class ListIconExample extends Component {
             <Title style={{marginLeft: 15}}>Mario Narigudo</Title>
         </View>
         <Content >
-          <ListItem icon >
+          <ListItem icon onPress={() => this.props.navigation.navigate("ProductItem")} >
             <Left>
                 <Icon name="home" style={{color: "#777777"}} />
             </Left>

@@ -34,7 +34,7 @@ export default class extends Component {
                 <Text style={styles.price}>R$ 80,22</Text>
                 <Text style={styles.text}>Titulo da merda do produto</Text>
             </View>
-            <MiniSeller />
+            <MiniSeller onPressChat={() => this.props.navigation.navigate('Chat')} onPressProfile={() => this.props.navigation.navigate('Profile')} />
             <View style={{backgroundColor: "#FFFFFF", padding: 10, marginTop: 5}}>
                 <Text style={{fontSize: 18, fontWeight: "bold", color: "#000"}}>Descrição:</Text>
                 <Text style={{color: "#000"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum dolor est, dapibus sagittis enim egestas eu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin consequat justo libero. Quisque mattis posuere enim, at ultrices felis posuere sit amet. Donec ac euismod neque. Donec ac diam quis sapien porttitor pharetra. Morbi eleifend elit non enim tincidunt vestibulum. Aliquam congue tincidunt libero, at venenatis ligula dictum a. Ut sit amet massa id ipsum placerat interdum sit amet vel lectus. Integer iaculis eros ut metus molestie luctus. Nulla et lacinia odio, ac euismod enim.</Text>

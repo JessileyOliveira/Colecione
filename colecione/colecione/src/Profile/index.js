@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView,TouchableOpacity } from 'react-native';
 import { Thumbnail, Icon } from 'native-base';
 import RatingUser from './../RatingUser';
 import ProductList from './../ProductList'
@@ -16,11 +16,11 @@ class Profile extends Component {
                         <Text style={{fontSize: 24}}>Mario Narigudo da Silva</Text>
                     </View>
                 </View>
-                <View style={{flexDirection: "row", backgroundColor: "#FFFFFF", marginTop: 2, padding: 10, justifyContent: "space-around"}}>
-                    <View style={{flexDirection: "column", alignItems: "center"}}>
+                <View style={{flexDirection: "row", backgroundColor: "#FFFFFF", marginTop: 2, padding: 10, justifyContent: "space-around"}} >
+                    <TouchableOpacity style={{flexDirection: "column", alignItems: "center"}} onPress={() => this.props.navigation.navigate('Chat')}>
                         <Icon type="FontAwesome5"  name="comment" style={{color: "#0000FF"}} />
                         <Text >Contato</Text>
-                    </View>
+                    </TouchableOpacity>
                     <RatingUser/>
                 </View>
                 <ScrollView style={{backgroundColor: "#FFFFFF", marginTop: 2}}>
